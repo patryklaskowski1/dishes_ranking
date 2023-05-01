@@ -18,16 +18,21 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text(
+          'Ranking Dań',
+        ),
+      ),
       body: Builder(builder: (context) {
         if (currentIndex == 0) {
-          return Center(
+          return const Center(
             child: Text(
               'Opinie',
             ),
           );
         }
         if (currentIndex == 1) {
-          return Center(
+          return const Center(
             child: Text(
               'Dodaj',
             ),
