@@ -1,3 +1,6 @@
+import 'package:dishes_ranking/app/home/add_opinion/add_opinion_page_content.dart';
+import 'package:dishes_ranking/app/home/my_account/my_account_page_content.dart';
+import 'package:dishes_ranking/app/home/restaurants/restaurants_page_content.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -25,36 +28,12 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Builder(builder: (context) {
         if (currentIndex == 0) {
-          return const Center(
-            child: Text(
-              'Opinie',
-            ),
-          );
+          return const RestaurantsPageContent();
         }
         if (currentIndex == 1) {
-          return const Center(
-            child: Text(
-              'Dodaj',
-            ),
-          );
+          return const AddOpinionPageContent();
         }
-        return Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                'Jesteś zalogowany jako ${widget.user.email} ',
-              ),
-              const SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () {
-                  FirebaseAuth.instance.signOut();
-                },
-                child: const Text('Wyloguj'),
-              ),
-            ],
-          ),
-        );
+        return MyAccountContent(email: widget.user.email);
       }),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: currentIndex,
