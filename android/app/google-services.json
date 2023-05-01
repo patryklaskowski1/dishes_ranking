@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1043338650558",
+    "project_id": "dishes-ranking-1213",
+    "storage_bucket": "dishes-ranking-1213.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043338650558:android:e6e65c3a17ded771e2cfef",
+        "android_client_info": {
+          "package_name": "com.patryklaskowski.dishes_ranking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043338650558-9l8jnebn5ctkurar3aobl10p3im5uajr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCouXaKMQ0i5JnD__MCM1algshRNpcmdRI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1043338650558-9l8jnebn5ctkurar3aobl10p3im5uajr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

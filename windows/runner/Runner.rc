@@ -89,11 +89,11 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.example" "\0"
+            VALUE "CompanyName", "com.patryklaskowski" "\0"
             VALUE "FileDescription", "dishes_ranking" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
             VALUE "InternalName", "dishes_ranking" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2023 com.patryklaskowski. All rights reserved." "\0"
             VALUE "OriginalFilename", "dishes_ranking.exe" "\0"
             VALUE "ProductName", "dishes_ranking" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"

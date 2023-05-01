@@ -1,4 +1,4 @@
-package com.example.dishes_ranking
+package com.patryklaskowski.dishes_ranking
 
 import io.flutter.embedding.android.FlutterActivity
 
