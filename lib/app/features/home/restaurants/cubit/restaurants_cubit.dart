@@ -1,7 +1,8 @@
 import 'dart:async';
-
+// ignore: depend_on_referenced_packages
 import 'package:bloc/bloc.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+// ignore: depend_on_referenced_packages
 import 'package:meta/meta.dart';
 
 part 'restaurants_state.dart';
@@ -25,6 +26,7 @@ class RestaurantsCubit extends Cubit<RestaurantsState> {
       ),
     );
 
+    // ignore: no_leading_underscores_for_local_identifiers
     StreamSubscription? _streamSubscription;
 
     _streamSubscription = FirebaseFirestore.instance
@@ -47,13 +49,14 @@ class RestaurantsCubit extends Cubit<RestaurantsState> {
     )..onError((error) {
         emit(
           RestaurantsState(
-            documents: [],
+            documents: const [],
             errorMessage: error.toString(),
             isLoading: false,
           ),
         );
       });
     @override
+    // ignore: unused_element
     Future<void> close() {
       _streamSubscription?.cancel();
       return super.close();

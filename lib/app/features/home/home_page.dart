@@ -1,6 +1,6 @@
-import 'package:dishes_ranking/app/home/add_opinion/add_opinion_page_content.dart';
-import 'package:dishes_ranking/app/home/my_account/my_account_page_content.dart';
-import 'package:dishes_ranking/app/home/restaurants/restaurants_page_content.dart';
+import 'package:dishes_ranking/app/features/home/add_opinion/add_opinion_page_content.dart';
+import 'package:dishes_ranking/app/features/home/my_account/my_account_page_content.dart';
+import 'package:dishes_ranking/app/features/home/restaurants/restaurants_page_content.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
